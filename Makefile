@@ -14,6 +14,7 @@ clean:
 
 env:
 	conda env create -f $(CONDA_ENV_YML) -n $(ENV_NAME)
+	conda env config vars set PYTHONPATH=$PWD/src
 
 data/00_raw/mnist.npz:
 	python src/data/raw.py $(MNIST_URL) $@
