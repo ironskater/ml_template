@@ -1,5 +1,5 @@
 /data/00_raw/
-/data/01_raw/
+/data/01_clean/
 .vscode
 .ipynb_checkpoints
 *.log
