@@ -17,4 +17,4 @@ env:
 	conda env config vars set PYTHONPATH=$(PWD)/src
 
 data/00_raw/mnist.npz:
-	python src/data/raw.py $(MNIST_URL) $@
+	python src/main/data/raw.py $(MNIST_URL) $@
