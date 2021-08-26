@@ -23,11 +23,12 @@
 	|	│   ├── __init__.py
 	|	│   ├── cnn.py
 	|	│   └── dnn.py
-	|	├── utility
-	|	│   ├── __init__.py
-	|	│   └── logger.py
 	|	└── visulaization <--- visulaization tools for model performances, data etc
 	|		└── __init__.py
 	|
 	└── test
+	|
+	└── utility
+	    ├── __init__.py
+	    └── logger.py
 ```
