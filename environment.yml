@@ -16,4 +16,4 @@ dependencies:
  - click
 
 variables:
-  PYTHONPATH: $PWD/src
+  PYTHONPATH: ./src
