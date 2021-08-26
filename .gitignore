@@ -1,1 +1,5 @@
 /data/
+.vscode
+.ipynb_checkpoints
+*.log
+/src/utility/__pycache__/
