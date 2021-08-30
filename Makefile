@@ -6,15 +6,23 @@ RAW_DATA = "data/00_raw/iris.csv"
 
 CONDA_ENV_YML = environment.yml
 ENV_NAME = mltmp
+MNIST = data/00_raw/mnist.npz
 
 #all: env
-
-clean:
-	rm -f data/00_raw/*.npz
 
 env:
 	conda env create -f $(CONDA_ENV_YML) -n $(ENV_NAME)
 	conda env config vars set PYTHONPATH=$(PWD)/src -n $(ENV_NAME)
 
-data/00_raw/mnist.npz:
-	python src/main/data/raw.py $(MNIST_URL) $@
+mnist:
+ifeq ("$(wildcard $(MNIST))", "")
+	python src/main/data/raw.py $(MNIST_URL) $(MNIST)
+else
+	@echo "Data has exitsted"
+endif
+
+clean:
+	rm -f data/00_raw/*.npz
+
+# data/00_raw/mnist.npz:
+# 	python src/main/data/raw.py $(MNIST_URL) $@
