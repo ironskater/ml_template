@@ -21,7 +21,7 @@
 	|	│   └── raw.py
 	|	├── model <--- final model script, let us easy to reproduce model train/prediction by make tool
 	|	│   ├── __init__.py
-	|	│   ├── config
+	|	│   ├── hyperparam
 	|	│   ├── cnn.py
 	|	│   └── dnn.py
 	|	└── visulaization <--- visulaization tools for model performances, data etc
