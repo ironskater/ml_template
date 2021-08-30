@@ -4,3 +4,4 @@
 .ipynb_checkpoints
 *.log
 /src/utility/__pycache__/
+*.env

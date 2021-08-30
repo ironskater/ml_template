@@ -13,6 +13,7 @@ MNIST = data/00_raw/mnist.npz
 env:
 	conda env create -f $(CONDA_ENV_YML) -n $(ENV_NAME)
 	conda env config vars set PYTHONPATH=$(PWD)/src -n $(ENV_NAME)
+	echo PYTHONPATH=$(pwd)/src > dev.env
 
 mnist:
 ifeq ("$(wildcard $(MNIST))", "")
