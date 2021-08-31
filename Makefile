@@ -20,7 +20,7 @@ else
 endif
 
 clean:
-	rm -f data/00_raw/*.npz
+	rm -f data/00_example/*
 
 # data/00_raw/mnist.npz:
 # 	python src/main/data/raw.py $(MNIST_URL) $@
