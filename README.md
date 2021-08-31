@@ -1,13 +1,11 @@
 ```
 .
 ├── README.md <--- project description
-├── dev.env <--- Setting vscode development env
 ├── environment.yml <--- Used for creating a new conda env
 ├── Makefile <--- Control project lifecycle, use 'make train', 'make test', or 'make data' etc to do it
 ├── model <--- Store model, .pickle or .h5
 ├── data <--- Store data in different pipeline stages. This folder is ignored by git
-│   ├── 00_raw
-│   └── 01_clean
+│   └── 00_example
 ├── notebook
 │   └── dnn.ipynb
 ├── report <--- reports of each model's performances, and experimental condition etc
@@ -24,7 +22,7 @@
 	|	│   ├── hyperparam <--- store model's hyperparameter
 	|	│   ├── cnn.py
 	|	│   └── dnn.py
-	|	└── visulaization <--- visulaization tools for model performances, data etc
+	|	└── analysis <--- analysis scirpt such as visulaization for model performances, data distribution etc
 	|		└── __init__.py
 	|
 	├── test
