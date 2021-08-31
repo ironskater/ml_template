@@ -4,7 +4,7 @@ MNIST_URL = "https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.n
 
 CONDA_ENV_YML = environment.yml
 ENV_NAME = mltmp
-MNIST = data/00_raw/mnist.npz
+MNIST = data/00_example/mnist.npz
 
 #all: env
 env:
