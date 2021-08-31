@@ -1,8 +1,6 @@
 .PHONY: all clean
 
-IRIS_URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 MNIST_URL = "https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz"
-RAW_DATA = "data/00_raw/iris.csv"
 
 CONDA_ENV_YML = environment.yml
 ENV_NAME = mltmp
